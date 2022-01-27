@@ -3029,7 +3029,7 @@ void escanear(FILE *f, cadena_t restante, simbolo_t *simbolo, cadena_t cadenaSim
                 *simbolo = IDENT;
             }
         }
-        else if (isdigit(restante[0]) || (restante[0] == '-' && isdigit(restante[1]))) // Si es dígito 0-9
+        else if (isdigit(restante[0])) // Si es dígito 0-9
         {
 
             do
